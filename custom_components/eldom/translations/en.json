@@ -1,0 +1,17 @@
+{
+  "config": {
+    "error": {
+      "login_error": "Login error: {msg}"
+    },
+    "step": {
+      "user": {
+        "description": "Please enter the Username and password to athenticate to eldom services",
+        "data": {
+          "endpoint": "Eldom api url",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    }
+  }
+}

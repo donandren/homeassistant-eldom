@@ -1,0 +1,48 @@
+{
+  "domain": "eldom",
+  "name": "eldom",
+  "codeowners": ["@donandren"],
+  "config_flow": true,
+  "dependencies": [],
+  "dhcp": [
+    {
+      "macaddress": "105A17*"
+    },
+    {
+      "macaddress": "10D561*"
+    },
+    {
+      "macaddress": "1869D8*"
+    },
+    {
+      "macaddress": "381F8D*"
+    },
+    {
+      "macaddress": "508A06*"
+    },
+    {
+      "macaddress": "68572D*"
+    },
+    {
+      "macaddress": "708976*"
+    },
+    {
+      "macaddress": "7CF666*"
+    },
+    {
+      "macaddress": "84E342*"
+    },
+    {
+      "macaddress": "D4A651*"
+    },
+    {
+      "macaddress": "D81F12*"
+    }
+  ],
+  "documentation": "https://github.com/donandren/homeassistant-eldom",
+  "issue_tracker": "https://github.com/donandren/homeassistant-eldom/issues",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "version": "0.0.1",
+  "requirements": []
+}
