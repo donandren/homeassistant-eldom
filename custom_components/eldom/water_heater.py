@@ -4,7 +4,7 @@ from typing import Any
 from homeassistant.components.water_heater import (
     ATTR_TEMPERATURE,
     WaterHeaterEntity,
-    WaterHeaterEntityEntityDescription,
+    WaterHeaterEntityDescription,
     WaterHeaterEntityFeature,
 )
 from homeassistant.const import UnitOfTemperature
@@ -17,14 +17,14 @@ from .entity import EldomBaseEntity
 
 
 @dataclass
-class EldomHeaterEntityDescription(WaterHeaterEntityEntityDescription):
+class EldomHeaterEntityDescription(WaterHeaterEntityDescription):
     """Describes Eldom sensor entity."""
 
 
 HEATERS: dict[DeviceType, EldomHeaterEntityDescription] = {
     # Eldom Flat Boiler
     DeviceType.FLAT_WATER_HEATER: EldomHeaterEntityDescription(
-        key="heater", name=DeviceType.FLAT_WATER_HEATER.name
+        key="heater", name=DeviceType.FLAT_WATER_HEATER.name, 
     )
 }
 
@@ -53,7 +53,7 @@ class EldomHeaterEntity(EldomBaseEntity, WaterHeaterEntity):
     def __init__(
         self,
         coordinator: EldomCoordinator,
-        description: WaterHeaterEntityEntityDescription,
+        description: WaterHeaterEntityDescription,
     ) -> None:
         super().__init__(coordinator, description)
         self._attr_name = coordinator.device.display_name
