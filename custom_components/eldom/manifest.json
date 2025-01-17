@@ -43,6 +43,6 @@
   "issue_tracker": "https://github.com/donandren/homeassistant-eldom/issues",
   "integration_type": "hub",
   "iot_class": "cloud_polling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "requirements": []
 }
